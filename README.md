@@ -1,7 +1,7 @@
 # parking-control
  
 Tecnologias utilizadas:
-- JDK 10
+- JDK 11
 - Maven
 - Postman
 - PgAdmin (Postgres)
