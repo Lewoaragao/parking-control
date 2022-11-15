@@ -19,9 +19,8 @@ public class ParkingSpotModel implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-//    @GeneratedValue(strategy = GenerationType.AUTO)
-    @GeneratedValue(generator = "increment")
-	@GenericGenerator(name = "increment" ,strategy = "increment")
+	@GeneratedValue(generator = "uuid2")
+	@GenericGenerator(name = "uuid2", strategy = "org.hibernate.id.UUIDGenerator")
     private UUID id;
 	
     @Column(nullable = false, unique = true, length = 10)
